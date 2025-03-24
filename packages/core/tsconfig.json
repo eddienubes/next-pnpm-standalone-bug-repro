@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "ES2020",
+    "module": "commonjs",
+    "incremental": true,
+    "lib": [
+      "esnext.decorators",
+      "es2022"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "vitest/globals"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "scripts/**/*"
+  ]
+}
