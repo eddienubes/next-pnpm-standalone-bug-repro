@@ -9,27 +9,10 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm run build && (concurrently \"tsc -w -p tsconfig.build.json\" \"tsc-alias -w -p tsconfig.build.json\" \"pnpm tsx scripts/copy.ts\")",
-    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json && pnpm tsx scripts/copy.ts",
-    "test": "vitest run",
-    "migrate": "pnpm drizzle-kit migrate --config src/pg/drizzleConfig.ts",
-    "migrate:drop": "pnpm drizzle-kit drop --config src/pg/drizzleConfig.ts",
-    "migrate:create": "pnpm drizzle-kit generate --config src/pg/drizzleConfig.ts",
-    "migrate:clean": "pnpm tsx --env-file .env test/clearDb.ts && pnpm run migrate"
   },
   "dependencies": {
-    "@apollo/client": "^3.13.1",
-    "@googleapis/sheets": "^9.5.0",
-    "bullmq": "^5.41.8",
-    "drizzle-orm": "^0.40.0",
-    "google-auth-library": "^9.15.1",
-    "graphql": "^16.10.0",
-    "ioredis": "^5.6.0",
-    "leetcode-query": "^1.2.3",
-    "postgres": "^3.4.5"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.6.1"
+  "license": "ISC"
 }

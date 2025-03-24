@@ -1,3 +1,9 @@
-# LC Monkey Telegram Bot
+# Next.js + Standalone + pnpm bug
 
-## FLG :)
+```bash
+nvm use # (optionally install)
+pnpm install
+cd projects/ui
+pnpm build
+node .next/standalone/server.js
+```

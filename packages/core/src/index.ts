@@ -1,8 +1,3 @@
-export * from './common'
-export * from './lc'
-export * from './lc-users'
-export * from './pg'
-export * from './tg'
-export * from './config'
-export * from './google'
-export * from './spreadsheets'
+export const run = async () => {
+  console.log('I am a dummy core package');
+}
